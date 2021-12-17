@@ -22,3 +22,17 @@ git push -u origin main
 ```
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+
+# RealWorld
+
+```sh
+# 安装依赖
+npm install
+
+# 启动开发服务
+npm run dev
+```
+
+
