@@ -17,7 +17,8 @@ jobs:
       uses: actions/setup-node@master
     - run: npm install
     - run: npm run build
-    - run: tar -zcvf release.tgz .nuxt static nuxt.config.js package.json package-lock.json pm2.config.json
+    - run: cd docs/.vuepress/dist
+    - run: tar -zcvf release.tgz *
 
     # 发布 Release
     - name: Create Release
@@ -52,6 +53,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
+          rm -rf /root/vue_press/* 
           cd /root/vue_press
           wget https://github.com/zolagz/hi_vuepress/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
