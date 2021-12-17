@@ -1,8 +1,8 @@
 name: Publish And Deploy Demo
 on:
   push:
-    branches: [ main ]
-
+    tags:
+      - 'v*'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -52,8 +52,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          cd /root/realworld-nuxtjs
+          cd /root/vue_press
           wget https://github.com/zolagz/hi_vuepress/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
-          npm install --production
-          pm2 reload pm2.config.json
+          echo "Success"
+
