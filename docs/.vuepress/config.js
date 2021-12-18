@@ -53,11 +53,11 @@ module.exports = {
         ],
       },
       {
-        text: '页面',
-        link: '/ui/',
+        text: '后端',
+        link: '/back/',
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          { text: 'JAVA', link: '/pages/8309a5b876fc95e3/' },
+          { text: 'PYTHON', link: '/pages/0a83b083bdf257cb/' },
         ],
       },
       {
