@@ -56,5 +56,6 @@ jobs:
           cd /root/vue_press
           wget https://github.com/zolagz/hi_vuepress/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
+          mv /root/vue_press/docs/.vuepress/dist/* /opt/site_src/myblog/public/
           echo "Success"
 
