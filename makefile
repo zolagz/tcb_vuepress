@@ -7,4 +7,4 @@ git :
 	git push -u origin dev 
 
 	git tag $1
-	git push -u origin $1
+	git push origin $1
