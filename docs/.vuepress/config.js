@@ -56,8 +56,11 @@ module.exports = {
         text: '后端',
         link: '/back/',
         items: [
-          { text: 'JAVA', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'PYTHON', link: '/pages/0a83b083bdf257cb/' },
+          { text: 'Java', link: '/pages/8309a5b876fc95e3/' },
+          { text: 'Python', link: '/pages/ccbcd8/' },
+          { text: 'Go语言', link: '/pages/4abe03/' },
+          { text: 'Linux', link: '/pages/207ce4/' },
+
         ],
       },
       {
@@ -66,6 +69,7 @@ module.exports = {
         items: [
           { text: 'Tensorflow', link: '/pages/862ae0/' },
           { text: 'Pytorch', link: '/pages/24af9b/' },
+          { text: '计算机视觉', link: '/pages/2b3d8b/' },
         ],
       },
       {
